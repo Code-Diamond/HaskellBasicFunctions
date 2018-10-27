@@ -48,7 +48,7 @@ main = do
     let i = 6 -- number of iterations
     for (i) (putStr "...")
 
-    -- some array goodies
+    -- some list goodies
     let list = [1,2,3,4]
     let anotherList = [5,6,7,9]
     let combined = list ++ anotherList
