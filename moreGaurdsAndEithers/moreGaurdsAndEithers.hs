@@ -6,7 +6,7 @@ playerChoice option
     | option == "2" = Right "You go fight some monsters outside town and come back."
     | option == "3" = Right "You go to the town Inn."
     | option == "4" = Right "You go see the holy monk."
-    | otherwise = Left $ "\n\nInvalid Option...\nWhat would you like do to?\n" ++ displayOptions(0)
+    | otherwise = Left $ "\n\nInvalid Option...\nWhat would you like to do?\n" ++ displayOptions(0)
 
 
 displayOptions :: Int -> String
@@ -22,5 +22,5 @@ main = do
             putStrLn message
             choice <- getLine
             either ask start $ playerChoice(choice)
-        ask $ "What would you like do to?\n" ++ displayOptions(0)
+        ask $ "What would you like to do?\n" ++ displayOptions(0)
     start "The king has sent you on the journey to become a master."
